@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Budget App</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+	<div class="container">
+		<h1>BUDGET APP</h1>
+		<div class="row">
+			<div class="col-md-4 col-sm-12 mt-30">
+				<div class="card">
+					
+					<div class="card-body">
+						
+						<form action="#">
+							<div class="form-group">
+								<label for="email">Please enter your budget</label>
+								<input type="text" class="form-control" id="email" placeholder="your budget.." name="email" autocomplete="off">
+							</div>
+							<button type="submit" class="btn btn-primary">Calculate</button>
+						</form>
+					</div>
+					
+				</div>
+
+			</div>
+			<div class="col-md-8 col-sm-12 mt-30">
+				<div class="row">
+					<div class="col-md-4 col-sm-8 mt-10">
+						<div class="card">
+							<div class="card-body">
+								<center>
+									<h5 class="text-center">BUDGET</h5><br>
+									<img src="img/money-bill-solid.svg" class="svg"><br><br>
+									<div id="final_budget"><h6 style="font-size: 18px;font-weight: 600;"><i class="fa fa-rupee"></i> 0</h6></div>
+								</center>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-8 mt-10">
+						<div class="card">
+							<div class="card-body">
+								<center>
+									<h5 class="text-center">EXPENSES</h5><br>
+									<img src="img/money-check-solid.svg" class="svg"><br><br>
+									<div id="final_expenses"><h6 style="font-size: 18px;font-weight: 600;"><i class="fa fa-rupee" style="color:red"></i> 0</h6></div>
+								</center>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-8 mt-10">
+						<div class="card">
+							<div class="card-body">
+								<center>
+									<h5 class="text-center">BALANCE</h5><br>
+									<img src="img/rupee-sign-solid.svg" class="svg"><br><br>
+									<div id="final_balance"><h6 style="font-size: 18px;font-weight: 600;"><i class="fa fa-rupee"></i> 0</h6></div>
+								</center>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4 col-sm-12 mt-30">
+				<div class="card">
+					
+					<div class="card-body">
+						
+						<form action="#">
+							<div class="form-group">
+								<label for="email">Please name your expenses</label>
+								<input type="text" class="form-control" placeholder="Eg. Car, Fee" name="name_expenses" id="name_expenses" autocomplete="off">
+							</div>
+							<div class="form-group">
+								<label for="email">Please enter your expenses</label>
+								<input type="text" class="form-control" name="expenses" id="expenses" placeholder="Eg. 500, 2000" autocomplete="off">
+							</div>
+							<button type="submit" class="btn btn-primary">Calculate</button>
+						</form>
+					</div>
+					
+				</div>
+			</div>
+			<div class="col-md-8 col-sm-12 mt-30">
+				<table class="table">
+					<thead>
+						<tr>
+							<th>Expense Title</th>
+							<th>Expense Value</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>EMI</td>
+							<td>5000</td>
+						</tr>
+						<tr>
+							<td>Fee</td>
+							<td>2000</td>
+						</tr>
+
+					</tbody>
+				</table>
+			</div>
+		</div>
+		
+
+	</body>
+	</html>
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<!-- Popper JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
